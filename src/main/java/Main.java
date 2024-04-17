@@ -9,12 +9,16 @@ public class Main {
 
         System.out.print("wprowadz liczbe wierszy");
         int y = scanner.nextInt();
+      
 
-        char znak = '*';
-        for (int i = 0; i < y; i++) {
-            for (int j = 0; j < x; j++) {
-              if (j<=i){
-                System.out.print(znak + " ");}
+       
+        for (int i = 0; i < x; i++) {
+          for (int j=y; j>i+1; j--){
+            System.out.print(" ");
+          }
+            for (int j = 0; j < i+1; j++) {
+              {
+                System.out.print("*");}
             }
             System.out.println();
         }
